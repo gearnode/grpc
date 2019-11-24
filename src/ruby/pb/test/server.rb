@@ -115,7 +115,7 @@ def nulls(l)
 end
 
 def maybe_echo_metadata(_call)
-  
+
   # these are consistent for all interop tests
   initial_metadata_key = "x-grpc-test-echo-initial"
   trailing_metadata_key = "x-grpc-test-echo-trailing-bin"
@@ -165,7 +165,7 @@ class FullDuplexEnumerator
     end
   end
 end
-    
+
 # A runnable implementation of the schema-specified testing service, with each
 # service method implemented as required by the interop testing spec.
 class TestTarget < Grpc::Testing::TestService::Service
@@ -203,7 +203,7 @@ class TestTarget < Grpc::Testing::TestService::Service
     # reqs is a lazy Enumerator of the requests sent by the client.
     FullDuplexEnumerator.new(reqs).each_item
   end
-        
+
   def half_duplex_call(reqs)
     # TODO: update with unique behaviour of the half_duplex_call if that's
     # ever required by any of the tests.
