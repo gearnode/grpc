@@ -184,7 +184,11 @@ def main
     GRPC.logger.info("... running insecurely on #{options['host']}")
   end
 
+  $LOAD_PATH << "/Users/gearnode/workspace/jobteaser/grpc/grpc/src/ruby/pb"
+  require("grpc/reflection/reflection")
+
   s.handle(Calculator)
+  s.handle(Grpc::Reflection::Reflect.new(s))
   s.run_till_terminated
 end
 

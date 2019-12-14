@@ -275,13 +275,6 @@ Performance/TimesMap:
     - 'spec/client_server_spec.rb'
     - 'spec/server_spec.rb'
 
-# Offense count: 7
-Style/AccessorMethodName:
-  Exclude:
-    - 'qps/server.rb'
-    - 'stress/metrics_server.rb'
-    - 'stress/stress_client.rb'
-
 # Offense count: 2
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, SupportedStyles.
@@ -349,14 +342,6 @@ Style/EmptyMethod:
     - 'bin/noproto_server.rb'
     - 'lib/grpc/logconfig.rb'
     - 'spec/generic/rpc_desc_spec.rb'
-
-# Offense count: 2
-# Configuration parameters: ExpectMatchingDefinition, Regex, IgnoreExecutableScripts, AllowedAcronyms.
-# AllowedAcronyms: CLI, DSL, ACL, API, ASCII, CPU, CSS, DNS, EOF, GUID, HTML, HTTP, HTTPS, ID, IP, JSON, LHS, QPS, RAM, RHS, RPC, SLA, SMTP, SQL, SSH, TCP, TLS, TTL, UDP, UI, UID, UUID, URI, URL, UTF8, VM, XML, XMPP, XSRF, XSS
-Style/FileName:
-  Exclude:
-    - 'qps/src/proto/grpc/testing/proxy-service_pb.rb'
-    - 'qps/src/proto/grpc/testing/proxy-service_services_pb.rb'
 
 # Offense count: 12
 # Configuration parameters: AllowedVariables.
@@ -549,12 +534,6 @@ Style/TrailingUnderscoreVariable:
 Style/TrivialAccessors:
   Exclude:
     - 'qps/histogram.rb'
-
-# Offense count: 3
-# Cop supports --auto-correct.
-Style/UnneededInterpolation:
-  Exclude:
-    - 'pb/grpc/health/checker.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
